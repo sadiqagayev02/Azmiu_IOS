@@ -1,0 +1,22 @@
+{
+  "project": "azmiu_app",
+  "platform": "ios",
+  "github": {
+    "owner": "sadiqagayev02",
+    "repo": "Azmiu_IOS"
+  },
+  "provider": "github",
+  "codemagic": {},
+  "bitrise": {},
+  "ios": {
+    "path": "ios",
+    "bundleId": "com.azmiu.azmiuApp"
+  },
+  "flutter": {
+    "version": "3.44.8",
+    "watch": {}
+  },
+  "reactNative": {},
+  "kmp": {},
+  "mobai": {}
+}
