@@ -1,0 +1,36 @@
+name: iOS Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build iOS
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Build iOS (unsigned)
+        run: flutter build ios --release --no-codesign
+
+      - name: Zip the .app file
+        run: |
+          cd build/ios/iphoneos
+          zip -r Payload.zip Runner.app
+          mv Payload.zip ../../../../Runner.ipa
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v3
+        with:
+          name: Runner-ipa
+          path: Runner.ipa
