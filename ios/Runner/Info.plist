@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>AZMİU Kabinet</string>
+	<string>Azmiu App</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -66,25 +66,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	
-	<!-- ========================================== -->
-	<!-- YENİ İCAZƏLƏR -->
-	<!-- ========================================== -->
-	
-	<!-- Kamera (QR kod oxutmaq üçün) -->
-	<key>NSCameraUsageDescription</key>
-	<string>QR kod oxutmaq üçün kameraya ehtiyacımız var.</string>
-	
-	<!-- Qalereya (profil şəkli seçmək üçün) -->
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Profil şəkli seçmək üçün qalereyaya ehtiyacımız var.</string>
-	
-	<!-- Barmaq izi / Üz tanıma (biometrik giriş üçün) -->
-	<key>NSFaceIDUsageDescription</key>
-	<string>Tətbiqə giriş üçün barmaq izi və ya üz tanıma istifadə olunur.</string>
-	
-	<!-- NFC (tələbə kartını oxumaq üçün) -->
-	<key>NFCReaderUsageDescription</key>
-	<string>Tələbə kartını oxumaq üçün NFC istifadə olunur.</string>
 </dict>
 </plist>
