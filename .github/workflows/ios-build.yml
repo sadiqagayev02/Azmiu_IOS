@@ -30,7 +30,7 @@ jobs:
           mv Payload.zip ../../../../Runner.ipa
 
       - name: Upload IPA
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Runner-ipa
           path: Runner.ipa
