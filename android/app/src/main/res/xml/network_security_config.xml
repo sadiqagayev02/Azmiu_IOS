@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Bütün domenlər üçün SSL yoxlamasını keç -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+    
+    <!-- Xüsusi olaraq AZMİU domeni üçün -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">kabinet.azmiu.edu.az</domain>
+        <domain includeSubdomains="true">azmiu.edu.az</domain>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
